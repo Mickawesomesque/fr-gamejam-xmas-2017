@@ -30,7 +30,7 @@ class Game extends Phaser.Game {
 window.game = new Game()
 
 if (window.cordova) {
-  var app = {
+  const app = {
     initialize: function () {
       document.addEventListener(
         'deviceready',
