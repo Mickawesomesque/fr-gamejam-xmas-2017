@@ -1,5 +1,6 @@
 import {
   Camera,
+  Easing,
   Physics,
   State,
   Timer,
@@ -29,6 +30,13 @@ export default class extends State {
     this.tourist.inputEnabled = true
     this.tourist.input.start(0, true)
 
+    const touristBodyRadius = this.tourist.width / 3
+    this.tourist.body.setCircle(
+      touristBodyRadius,
+      -touristBodyRadius + 0.5 * (this.tourist.width / this.tourist.scale.x),
+      -touristBodyRadius + 0.5 * (this.tourist.height / this.tourist.scale.y)
+    )
+
     this.touristDrag = this.add.tileSprite(0, 0, 16, 16, 'tourist-drag')
     this.physics.enable(this.touristDrag, Physics.ARCADE)
     this.touristDrag.alpha = 0
@@ -48,10 +56,27 @@ export default class extends State {
       -yetiBodyRadius + 0.5 * (this.yeti.height / this.yeti.scale.y)
     )
     this.yeti.scale.setTo(2)
+
+    this.yetiArea = this.add.sprite(this.yeti.x, this.yeti.y, 'yeti-area')
+    this.physics.enable(this.yetiArea, Physics.ARCADE)
+    this.world.sendToBack(this.yetiArea)
+    this.yetiArea.anchor.setTo(0.5)
+    this.yetiArea.body.immovable = true
+    this.yetiArea.scale.setTo(2)
+
+    const yetiAreaBodyRadius = this.yeti.width / 2
+    this.yetiArea.body.setCircle(
+      yetiAreaBodyRadius,
+      -yetiAreaBodyRadius + 0.5 * (this.yetiArea.width / this.yetiArea.scale.x),
+      -yetiAreaBodyRadius + 0.5 * (this.yetiArea.height / this.yetiArea.scale.y)
+    )
+
+    this.yetiAreaTween = this.add.tween(this.yetiArea)
+      .to({ alpha: 0.5 }, Timer.SECOND, Easing.Linear.None, true, 0, -1, true)
   }
 
   update () {
-    this.physics.arcade.collide(this.tourist, this.yeti, this.wakePissedOffYeti, null, this)
+    this.physics.arcade.collide(this.tourist, this.yetiArea, this.wakePissedOffYeti, null, this)
 
     if (this.yeti.data.isPissedOff) {
       return
