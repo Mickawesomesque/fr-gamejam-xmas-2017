@@ -9,7 +9,11 @@ export default class extends State {
   }
 
   create () {
-    this.tourist = this.add.sprite(this.world.centerX, this.world.centerY, 'tourist')
+    this.tourist = this.add.sprite(
+      this.rnd.pick([100, this.game.width - 100]),
+      this.rnd.between(100, this.game.height - 100),
+      'tourist'
+    )
     this.physics.enable(this.tourist, Physics.ARCADE)
     this.tourist.anchor.setTo(0.5)
     this.tourist.body.allowDrag = true
@@ -28,9 +32,25 @@ export default class extends State {
     this.touristDrag.alpha = 0
     this.touristDrag.anchor.setTo(0.5, 0)
     this.touristDrag.body.allowGravity = true
+
+    this.yeti = this.add.sprite(this.world.centerX, this.world.centerY, 'yeti')
+    this.physics.enable(this.yeti, Physics.ARCADE)
+    this.world.sendToBack(this.yeti)
+    this.yeti.anchor.setTo(0.5)
+    this.yeti.body.immovable = true
+
+    const yetiBodyRadius = this.yeti.width / 2
+    this.yeti.body.setCircle(
+      yetiBodyRadius,
+      -yetiBodyRadius + 0.5 * (this.yeti.width / this.yeti.scale.x),
+      -yetiBodyRadius + 0.5 * (this.yeti.height / this.yeti.scale.y)
+    )
+    this.yeti.scale.setTo(2)
   }
 
   update () {
+    this.physics.arcade.collide(this.tourist, this.yeti, this.wakePissedOffYeti, null, this)
+
     if (this.tourist.data.isGrabbed) {
       const rotation = this.physics.arcade.angleToPointer(this.tourist) - (90 * (Math.PI / 180))
 
@@ -60,5 +80,11 @@ export default class extends State {
     this.tourist.moves = true
 
     this.touristDrag.alpha = 0
+  }
+
+  wakePissedOffYeti () {
+    this.world.bringToTop(this.yeti)
+
+    this.tourist.body.stop()
   }
 }
