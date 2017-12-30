@@ -1,6 +1,8 @@
 import {
+  Camera,
   Physics,
   State,
+  Timer,
 } from 'phaser'
 
 export default class extends State {
@@ -51,6 +53,10 @@ export default class extends State {
   update () {
     this.physics.arcade.collide(this.tourist, this.yeti, this.wakePissedOffYeti, null, this)
 
+    if (this.yeti.data.isPissedOff) {
+      return
+    }
+
     if (this.tourist.data.isGrabbed) {
       const rotation = this.physics.arcade.angleToPointer(this.tourist) - (90 * (Math.PI / 180))
 
@@ -83,8 +89,11 @@ export default class extends State {
   }
 
   wakePissedOffYeti () {
+    this.camera.shake(0.01, Timer.SECOND, true, Camera.SHAKE_BOTH, true)
+    this.tourist.body.stop()
     this.world.bringToTop(this.yeti)
 
-    this.tourist.body.stop()
+    this.tourist.body.moves = false
+    this.yeti.data.isPissedOff = true
   }
 }
