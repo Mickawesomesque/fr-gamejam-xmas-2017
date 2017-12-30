@@ -32,10 +32,6 @@ export default class extends State {
 
   update () {
     if (this.tourist.data.isGrabbed) {
-      if (this.input.activePointer.withinGame === false) {
-        this.launchTourist()
-      }
-
       const rotation = this.physics.arcade.angleToPointer(this.tourist) - (90 * (Math.PI / 180))
 
       this.touristDrag.alpha = 1
