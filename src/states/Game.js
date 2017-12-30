@@ -71,8 +71,10 @@ export default class extends State {
       -yetiAreaBodyRadius + 0.5 * (this.yetiArea.height / this.yetiArea.scale.y)
     )
 
-    this.yetiAreaTween = this.add.tween(this.yetiArea)
+    this.add.tween(this.yetiArea)
       .to({ alpha: 0.5 }, Timer.SECOND, Easing.Linear.None, true, 0, -1, true)
+    this.add.tween(this.yetiArea.scale)
+      .to({ x: 3, y: 3 }, 2 * Timer.SECOND, Easing.Linear.None, true, 0, -1, true)
   }
 
   update () {
