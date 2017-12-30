@@ -62,7 +62,7 @@ export default class extends State {
     this.world.sendToBack(this.yetiArea)
     this.yetiArea.anchor.setTo(0.5)
     this.yetiArea.body.immovable = true
-    this.yetiArea.scale.setTo(2)
+    this.yetiArea.scale.setTo(1.5)
 
     const yetiAreaBodyRadius = this.yeti.width / 2
     this.yetiArea.body.setCircle(
@@ -74,7 +74,7 @@ export default class extends State {
     this.yetiAreaAlphaTween = this.add.tween(this.yetiArea)
       .to({ alpha: 0.3 }, Timer.SECOND, Easing.Linear.None, true, 0, -1, true)
     this.yetiAreaScaleTween = this.add.tween(this.yetiArea.scale)
-      .to({ x: 3, y: 3 }, 2 * Timer.SECOND, Easing.Linear.None, true, 0, -1, true)
+      .to({ x: 2.5, y: 2.5 }, 2 * Timer.SECOND, Easing.Linear.None, true, 0, -1, true)
   }
 
   update () {
