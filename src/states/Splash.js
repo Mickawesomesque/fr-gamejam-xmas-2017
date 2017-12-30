@@ -13,7 +13,8 @@ export default class extends State {
     //
     // load your assets
     //
-    this.load.image('mushroom', 'assets/images/mushroom2.png')
+    this.load.image('tourist', 'assets/images/mushroom2.png')
+    this.load.image('tourist-drag', 'assets/images/tourist-drag.png')
   }
 
   create () {
