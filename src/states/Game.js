@@ -71,18 +71,18 @@ export default class extends State {
       -yetiAreaBodyRadius + 0.5 * (this.yetiArea.height / this.yetiArea.scale.y)
     )
 
-    this.add.tween(this.yetiArea)
-      .to({ alpha: 0.5 }, Timer.SECOND, Easing.Linear.None, true, 0, -1, true)
-    this.add.tween(this.yetiArea.scale)
+    this.yetiAreaAlphaTween = this.add.tween(this.yetiArea)
+      .to({ alpha: 0.3 }, Timer.SECOND, Easing.Linear.None, true, 0, -1, true)
+    this.yetiAreaScaleTween = this.add.tween(this.yetiArea.scale)
       .to({ x: 3, y: 3 }, 2 * Timer.SECOND, Easing.Linear.None, true, 0, -1, true)
   }
 
   update () {
-    this.physics.arcade.collide(this.tourist, this.yetiArea, this.wakePissedOffYeti, null, this)
-
     if (this.yeti.data.isPissedOff) {
       return
     }
+
+    this.physics.arcade.collide(this.tourist, this.yetiArea, this.wakePissedOffYeti, null, this)
 
     if (this.tourist.data.isGrabbed) {
       const rotation = this.physics.arcade.angleToPointer(this.tourist) - (90 * (Math.PI / 180))
@@ -118,9 +118,18 @@ export default class extends State {
   wakePissedOffYeti () {
     this.camera.shake(0.01, Timer.SECOND, true, Camera.SHAKE_BOTH, true)
     this.tourist.body.stop()
+    this.world.bringToTop(this.yetiArea)
     this.world.bringToTop(this.yeti)
+    this.yetiAreaAlphaTween.stop()
+    this.yetiAreaScaleTween.stop()
+
+    const areaSize = Math.max(this.yetiArea.width, this.yetiArea.height) / this.yetiArea.scale.x
+    const scale = (Math.max(this.world.width, this.world.height) / areaSize) + 2
+    this.add.tween(this.yetiArea.scale)
+      .to({ x: scale, y: scale }, Timer.HALF, Easing.Linear.None, true)
 
     this.tourist.body.moves = false
     this.yeti.data.isPissedOff = true
+    this.yetiArea.alpha = 0.3
   }
 }
