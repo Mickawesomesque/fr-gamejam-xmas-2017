@@ -75,10 +75,16 @@ export default class extends State {
       -yetiAreaBodyRadius + 0.5 * (this.yetiArea.height / this.yetiArea.scale.y)
     )
 
+    this.yetiDestination = this.add.sprite(0, 0, 'yeti-area')
+    this.world.sendToBack(this.yetiDestination)
+    this.yetiDestination.alpha = 0
+    this.yetiDestination.anchor.setTo(0.5)
+
     this.yetiAreaAlphaTween = this.add.tween(this.yetiArea)
       .to({ alpha: 0.3 }, Timer.SECOND, Easing.Linear.None, true, 0, -1, true)
     this.yetiAreaScaleTween = this.add.tween(this.yetiArea.scale)
       .to({ x: 2.5, y: 2.5 }, 2 * Timer.SECOND, Easing.Linear.None, true, 0, -1, true)
+    this.yetiDestinationAlphaTween = null
     this.yetiMovingTween = null
   }
 
@@ -99,10 +105,6 @@ export default class extends State {
       this.touristDrag.height = this.physics.arcade.distanceToPointer(this.tourist)
       this.touristDrag.rotation = rotation
     }
-  }
-
-  render () {
-    this.game.debug.body(this.yeti)
   }
 
   grabTourist (_, pointer) {
@@ -131,8 +133,23 @@ export default class extends State {
     const x = this.rnd.between(this.yeti.width, this.world.width - this.yeti.width)
     const y = this.rnd.between(this.yeti.height, this.world.height - this.yeti.height)
 
+    this.yetiDestination.x = x
+    this.yetiDestination.y = y
+
+    this.yetiDestinationAlphaTween = this.add.tween(this.yetiDestination)
+      .from({ alpha: 0.4 }, Timer.HALF, Easing.Linear.None)
+      .to({ alpha: 0.6 }, Timer.HALF, Easing.Linear.None)
+      .loop(true)
+      .start()
+
     this.yetiMovingTween = this.add.tween(this.yeti)
       .to({ x, y }, Timer.SECOND, Easing.Linear.None, true)
+    this.yetiMovingTween.onComplete.add(() => {
+      if (this.yetiDestinationAlphaTween) {
+        this.yetiDestinationAlphaTween.stop()
+        this.yetiDestination.alpha = 0
+      }
+    }, this)
 
     this.yeti.data.awakeningDelay.add(
       this.rnd.between(1, 7) * Timer.SECOND,
@@ -153,7 +170,7 @@ export default class extends State {
     this.yetiAreaScaleTween.stop()
 
     if (this.yetiMovingTween) {
-      this.yetiMovingTween.stop()
+      this.yetiMovingTween.stop(true)
     }
 
     const areaSize = Math.max(this.yetiArea.width, this.yetiArea.height) / this.yetiArea.scale.x
