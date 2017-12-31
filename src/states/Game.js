@@ -47,7 +47,11 @@ export default class extends State {
     this.physics.enable(this.yeti, Physics.ARCADE)
     this.world.sendToBack(this.yeti)
     this.yeti.anchor.setTo(0.5)
+    this.yeti.collideWorldBounds = true
     this.yeti.body.immovable = true
+    this.yeti.data.awakeningDelay = this.time.create(false)
+    this.yeti.data.awakeningDelay.add(5 * Timer.SECOND, this.onYetiAwakening, this)
+    this.yeti.data.awakeningDelay.start()
 
     const yetiBodyRadius = this.yeti.width / 2
     this.yeti.body.setCircle(
@@ -75,6 +79,7 @@ export default class extends State {
       .to({ alpha: 0.3 }, Timer.SECOND, Easing.Linear.None, true, 0, -1, true)
     this.yetiAreaScaleTween = this.add.tween(this.yetiArea.scale)
       .to({ x: 2.5, y: 2.5 }, 2 * Timer.SECOND, Easing.Linear.None, true, 0, -1, true)
+    this.yetiMovingTween = null
   }
 
   update () {
@@ -84,6 +89,9 @@ export default class extends State {
 
     this.physics.arcade.collide(this.tourist, this.yetiArea, this.wakePissedOffYeti, null, this)
 
+    this.yetiArea.x = this.yeti.x
+    this.yetiArea.y = this.yeti.y
+
     if (this.tourist.data.isGrabbed) {
       const rotation = this.physics.arcade.angleToPointer(this.tourist) - (90 * (Math.PI / 180))
 
@@ -91,6 +99,10 @@ export default class extends State {
       this.touristDrag.height = this.physics.arcade.distanceToPointer(this.tourist)
       this.touristDrag.rotation = rotation
     }
+  }
+
+  render () {
+    this.game.debug.body(this.yeti)
   }
 
   grabTourist (_, pointer) {
@@ -115,16 +127,37 @@ export default class extends State {
     this.touristDrag.alpha = 0
   }
 
+  onYetiAwakening () {
+    const x = this.rnd.between(this.yeti.width, this.world.width - this.yeti.width)
+    const y = this.rnd.between(this.yeti.height, this.world.height - this.yeti.height)
+
+    this.yetiMovingTween = this.add.tween(this.yeti)
+      .to({ x, y }, Timer.SECOND, Easing.Linear.None, true)
+
+    this.yeti.data.awakeningDelay.add(
+      this.rnd.between(1, 7) * Timer.SECOND,
+      this.onYetiAwakening,
+      this
+    )
+    this.yeti.data.awakeningDelay.start()
+  }
+
   wakePissedOffYeti () {
     this.camera.shake(0.01, Timer.SECOND, true, Camera.SHAKE_BOTH, true)
     this.tourist.body.stop()
+    this.yeti.body.stop()
+    this.yeti.data.awakeningDelay.stop()
     this.world.bringToTop(this.yetiArea)
     this.world.bringToTop(this.yeti)
     this.yetiAreaAlphaTween.stop()
     this.yetiAreaScaleTween.stop()
 
+    if (this.yetiMovingTween) {
+      this.yetiMovingTween.stop()
+    }
+
     const areaSize = Math.max(this.yetiArea.width, this.yetiArea.height) / this.yetiArea.scale.x
-    const scale = (Math.max(this.world.width, this.world.height) / areaSize) + 2
+    const scale = (Math.max(this.world.width, this.world.height) / areaSize) + 10
     this.add.tween(this.yetiArea.scale)
       .to({ x: scale, y: scale }, Timer.HALF, Easing.Linear.None, true)
 
