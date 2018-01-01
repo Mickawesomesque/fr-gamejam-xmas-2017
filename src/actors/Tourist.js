@@ -56,7 +56,6 @@ export default class extends Sprite {
     this.body.stop()
     this.body.allowGravity = false
     this.data.isGrabbed = true
-    this.moves = false
 
     this.dragTrail.x = this.x
     this.dragTrail.y = this.y
@@ -69,7 +68,6 @@ export default class extends Sprite {
     this.body.allowGravity = true
     this.body.velocity.setTo(vx, vy)
     this.data.isGrabbed = false
-    this.moves = true
 
     this.dragTrail.alpha = 0
   }
