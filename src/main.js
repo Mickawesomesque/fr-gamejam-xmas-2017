@@ -5,6 +5,7 @@ import GameState from './states/Game'
 import SplashState from './states/Splash'
 import Tutorial1State from './states/Tutorial1'
 import Tutorial2State from './states/Tutorial2'
+import Tutorial3State from './states/Tutorial3'
 
 import config from './config'
 
@@ -22,6 +23,7 @@ class Game extends Phaser.Game {
     this.state.add('Splash', SplashState, false)
     this.state.add('Tutorial1', Tutorial1State, false)
     this.state.add('Tutorial2', Tutorial2State, false)
+    this.state.add('Tutorial3', Tutorial3State, false)
     this.state.add('Game', GameState, false)
 
     // with Cordova with need to wait that the device is ready so we will call the Boot state in another file

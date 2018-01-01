@@ -39,7 +39,7 @@ export default class extends State {
       .text(
         this.world.centerX,
         250,
-        'To get fame',
+        'You always need fame',
         {
           align: 'center',
           fill: '#0A0A0A',
@@ -70,6 +70,6 @@ export default class extends State {
   onCollectDollar () {
     this.dollar.kill()
 
-    changeState(this.game, 'Game')
+    changeState(this.game, 'Tutorial3')
   }
 }
