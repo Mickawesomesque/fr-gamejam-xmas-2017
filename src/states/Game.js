@@ -101,7 +101,7 @@ export default class extends State {
 
   update () {
     if (this.yeti.data.isPissedOff) {
-      if (this.canRestart) {
+      if (this.canRestart && this.input.activePointer.isDown) {
         changeState(this.game, 'Game')
       }
 
