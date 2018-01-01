@@ -8,6 +8,8 @@ import {
 
 import Tourist from '../actors/Tourist'
 
+import { changeState } from '../utils'
+
 export default class extends State {
   init () {
     this.physics.startSystem(Physics.ARCADE)
@@ -58,6 +60,21 @@ export default class extends State {
     this.yetiDestination.alpha = 0
     this.yetiDestination.anchor.setTo(0.5)
 
+    const action = this.game.device.desktop ? 'Click' : 'Tap'
+    this.gameOverMessage = this.add.text(
+      this.world.centerX,
+      310,
+      `${action} to restart`,
+      {
+        align: 'center',
+        fill: '#0A0A0A',
+        font: 'Luckiest Guy',
+        fontSize: 64,
+      }
+    )
+    this.gameOverMessage.alpha = 0
+    this.gameOverMessage.anchor.setTo(0.5)
+
     this.yetiAreaAlphaTween = this.add.tween(this.yetiArea)
       .to({ alpha: 0.3 }, Timer.SECOND, Easing.Linear.None, true, 0, -1, true)
     this.yetiAreaScaleTween = this.add.tween(this.yetiArea.scale)
@@ -70,10 +87,16 @@ export default class extends State {
       .loop(true)
       .yoyo(true)
       .start()
+
+    this.canRestart = false
   }
 
   update () {
     if (this.yeti.data.isPissedOff) {
+      if (this.canRestart) {
+        changeState(this.game, 'Game')
+      }
+
       return
     }
 
@@ -157,5 +180,9 @@ export default class extends State {
     this.yetiArea.alpha = 0.3
 
     this.tourist.disable()
+
+    this.add.tween(this.gameOverMessage)
+      .to({ alpha: 1 }, Timer.SECOND, Easing.Linear.None, true, Timer.SECOND)
+      .onComplete.add(() => { this.canRestart = true }, this)
   }
 }
