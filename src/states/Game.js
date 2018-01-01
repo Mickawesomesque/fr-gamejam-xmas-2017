@@ -10,6 +10,8 @@ import Tourist from '../actors/Tourist'
 
 import { changeState } from '../utils'
 
+const MAX_FAME = 7
+
 export default class extends State {
   init () {
     this.physics.startSystem(Physics.ARCADE)
@@ -64,6 +66,21 @@ export default class extends State {
     this.yetiDestination.alpha = 0
     this.yetiDestination.anchor.setTo(0.5)
 
+    this.statsLabel = this.add
+      .text(
+        this.world.centerX,
+        250,
+        '',
+        {
+          align: 'center',
+          fill: '#0A0A0A',
+          font: 'Luckiest Guy',
+          fontSize: 42,
+        }
+      )
+    this.statsLabel.alpha = 0
+    this.statsLabel.anchor.setTo(0.5)
+
     const action = this.game.device.desktop ? 'Click' : 'Tap'
     this.gameOverMessage = this.add.text(
       this.world.centerX,
@@ -78,6 +95,15 @@ export default class extends State {
     )
     this.gameOverMessage.alpha = 0
     this.gameOverMessage.anchor.setTo(0.5)
+
+    this.fame = Math.ceil(MAX_FAME / 2)
+
+    this.fameLabel = this.add.text(10, 10, `Fame: ${this.fame}/${MAX_FAME}`, {
+      align: 'left',
+      fill: '#0A0A0A',
+      font: 'Luckiest Guy',
+      fontSize: 56,
+    })
 
     this.yetiAreaAlphaTween = this.add.tween(this.yetiArea)
       .to({ alpha: 0.3 }, Timer.SECOND, Easing.Linear.None, true, 0, -1, true)
@@ -97,6 +123,12 @@ export default class extends State {
     this.dollarSpawner = this.time.create(false)
     this.dollarSpawner.add(2 * Timer.SECOND, this.spawnDollar, this)
     this.dollarSpawner.start()
+
+    this.fameTimer = this.time.create()
+    this.fameTimer.loop(Timer.SECOND, this.decrementFame, this)
+    this.fameTimer.start(Timer.SECOND)
+
+    this.startTime = this.time.time
   }
 
   update () {
@@ -104,7 +136,6 @@ export default class extends State {
       if (this.canRestart && this.input.activePointer.isDown) {
         changeState(this.game, 'Game')
       }
-
       return
     }
 
@@ -115,8 +146,32 @@ export default class extends State {
     this.yetiArea.y = this.yeti.y
   }
 
+  decrementFame () {
+    if (this.yeti.data.isPissedOff) {
+      return
+    }
+
+    this.fame -= 1
+    if (this.fame <= 0) {
+      this.fame = 0
+    }
+
+    this.fameLabel.setText(`Fame: ${this.fame}/${MAX_FAME}`)
+
+    if (this.fame === 0) {
+      this.fameTimer.removeAll()
+      this.wakePissedOffYeti()
+    }
+  }
+
   onCollectDollar (_, dollar) {
     dollar.kill()
+
+    this.fame += 1
+    if (this.fame > MAX_FAME) {
+      this.fame = MAX_FAME
+    }
+    this.fameLabel.setText(`Fame: ${this.fame}/${MAX_FAME}`)
   }
 
   onYetiAwakening () {
@@ -208,8 +263,17 @@ export default class extends State {
     this.dollarSpawner.stop()
 
     this.world.bringToTop(this.gameOverMessage)
+    this.world.bringToTop(this.fameLabel)
+    this.world.bringToTop(this.statsLabel)
+
     this.add.tween(this.gameOverMessage)
       .to({ alpha: 1 }, Timer.SECOND, Easing.Linear.None, true, Timer.SECOND)
       .onComplete.add(() => { this.canRestart = true }, this)
+
+    const duration = Number(this.time.elapsedSecondsSince(this.startTime)).toFixed(1)
+    this.statsLabel.setText(`You lasted ${duration} seconds!`)
+
+    this.add.tween(this.statsLabel)
+      .to({ alpha: 1 }, Timer.SECOND, Easing.Linear.None, true, Timer.SECOND)
   }
 }
