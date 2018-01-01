@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="assets.svg"
+   inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\vectors\Yeti.png"
+   inkscape:export-xdpi="35"
+   inkscape:export-ydpi="35">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="-477.00425"
+     inkscape:cy="1739.4796"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-bbox="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1592"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <ellipse
+       style="fill:#b7c8c4;stroke-width:0.31414759"
+       id="path3764"
+       cx="31.630079"
+       cy="193.23399"
+       rx="13.226827"
+       ry="26.770981"
+       transform="matrix(0.95621976,-0.29264956,0.23791273,0.97128654,0,0)"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\yeti.png"
+       inkscape:export-xdpi="35.415634"
+       inkscape:export-ydpi="35.415634" />
+    <ellipse
+       transform="matrix(-0.95621976,-0.29264956,-0.23791273,0.97128654,0,0)"
+       ry="26.770981"
+       rx="13.226827"
+       cy="136.9183"
+       cx="-155.27837"
+       id="ellipse3766"
+       style="fill:#b7c8c4;stroke-width:0.31414759"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\yeti.png"
+       inkscape:export-xdpi="35.415634"
+       inkscape:export-ydpi="35.415634" />
+    <path
+       style="fill:#ffeeaa;stroke-width:0.26458332"
+       d="m 71.639962,38.77375 c -0.750038,2.252969 -4.870357,2.91008 -9.202989,1.467699 -4.332632,-1.442381 -5.56623,-11.55052 -4.816192,-13.803489 0.750038,-2.252968 3.199688,4.202387 7.53232,5.644768 4.332632,1.442381 7.236899,4.438053 6.486861,6.691022 z"
+       id="path3768"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\yeti.png"
+       inkscape:export-xdpi="35.415634"
+       inkscape:export-ydpi="35.415634" />
+    <path
+       sodipodi:nodetypes="sssss"
+       inkscape:connector-curvature="0"
+       id="path3771"
+       d="m 119.71014,38.77375 c 0.75004,2.252969 4.87036,2.91008 9.20299,1.467699 4.33263,-1.442381 5.56623,-11.55052 4.81619,-13.803489 -0.75004,-2.252968 -3.19969,4.202387 -7.53232,5.644768 -4.33263,1.442381 -7.2369,4.438053 -6.48686,6.691022 z"
+       style="fill:#ffeeaa;stroke-width:0.26458332"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\yeti.png"
+       inkscape:export-xdpi="35.415634"
+       inkscape:export-ydpi="35.415634" />
+    <path
+       id="rect3703"
+       style="fill:#b7c8c4;stroke-width:0.4009431"
+       d="m 57.062046,58.25878 h 77.641794 l 7.75462,79.05575 -93.190273,-0.24595 z m 85.396414,79.05575 A 46.604462,38.931545 0 0 1 95.854003,176.24608 46.604462,38.931545 0 0 1 49.249542,137.31453 46.604462,38.931545 0 0 1 95.854003,98.382987 46.604462,38.931545 0 0 1 142.45846,137.31453 Z M 134.78554,60.046916 A 38.931545,38.931545 0 0 1 95.854003,98.978457 38.931545,38.931545 0 0 1 56.922458,60.046916 38.931545,38.931545 0 0 1 95.854003,21.11537 38.931545,38.931545 0 0 1 134.78554,60.046916 Z"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\yeti.png"
+       inkscape:export-xdpi="35.415634"
+       inkscape:export-ydpi="35.415634" />
+    <path
+       id="circle3757"
+       style="fill:#b7c8c4;stroke-width:0.34379828"
+       d="m 63.286136,92.372194 c -1.78902,6.388053 -1.770538,6.377453 -8.053069,4.617993 C 48.950542,95.230714 13.564919,55.806703 15.35394,49.418651 c 1.78902,-6.388052 9.589136,-13.734067 15.871663,-11.9746 6.282527,1.759467 33.849554,48.540086 32.060533,54.928143 z M 37.75288,51.236714 A 11.813204,12.011628 15.645289 0 1 23.13805,59.61751 11.813204,12.011628 15.645289 0 1 15.001836,44.86512 11.813204,12.011628 15.645289 0 1 29.616667,36.484323 11.813204,12.011628 15.645289 0 1 37.75288,51.236714 Z"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\yeti.png"
+       inkscape:export-xdpi="35.415634"
+       inkscape:export-ydpi="35.415634" />
+    <path
+       style="fill:#d5fff6;stroke-width:0.26458332"
+       d="m 126.62126,70.47906 c 0,8.329145 -13.50421,15.08125 -30.162497,15.08125 -16.658289,0 -30.162501,-6.752105 -30.162501,-15.08125 0,-16.068208 12.998849,-3.343855 30.162501,-3.343855 16.305887,0 30.162497,-13.914978 30.162497,3.343855 z"
+       id="path3715"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\yeti.png"
+       inkscape:export-xdpi="35.415634"
+       inkscape:export-ydpi="35.415634" />
+    <path
+       style="fill:#000000;stroke-width:0.07553254"
+       d="m 81.642095,64.732285 c 2.073962,0.526861 -1.954557,6.540531 -4.365625,6.540531 -2.411068,0 -4.365625,-1.73468 -4.365625,-3.874517 0,-2.139837 2.004452,-4.362484 4.365625,-3.874517 2.036891,0.42095 1.46575,0.471832 4.365625,1.208503 z"
+       id="circle3723"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\yeti.png"
+       inkscape:export-xdpi="35.415634"
+       inkscape:export-ydpi="35.415634" />
+    <path
+       style="fill:#ffffff;stroke-width:0.07553254"
+       d="m 80.716055,65.498245 a 1.3229166,1.1740961 0 0 1 -1.322917,1.174095 1.3229166,1.1740961 0 0 1 -1.322916,-1.174095 1.3229166,1.1740961 0 0 1 1.322916,-1.174097 1.3229166,1.1740961 0 0 1 1.322917,1.174097 z"
+       id="path3740"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\yeti.png"
+       inkscape:export-xdpi="35.415634"
+       inkscape:export-ydpi="35.415634" />
+    <path
+       style="fill:#000000;stroke-width:0.1692594"
+       d="m 106.58905,83.563265 c 2.70281,-0.0522 0.53255,-9.8999 -9.525002,-9.888801 -10.151128,0.0112 -12.194783,9.739605 -9.491926,9.789583 3.108854,0.05749 4.158351,-0.992188 9.491926,-0.992188 5.333572,0 6.548442,1.148892 9.525002,1.091408 z"
+       id="path3729"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssssc"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\yeti.png"
+       inkscape:export-xdpi="35.415634"
+       inkscape:export-ydpi="35.415634" />
+    <path
+       sodipodi:nodetypes="sssss"
+       inkscape:connector-curvature="0"
+       id="path3749"
+       d="m 109.82721,64.732285 c -2.07396,0.526861 1.95456,6.540531 4.36563,6.540531 2.41106,0 4.36562,-1.73468 4.36562,-3.874517 0,-2.139837 -2.00445,-4.362484 -4.36562,-3.874517 -2.03689,0.42095 -1.46575,0.471832 -4.36563,1.208503 z"
+       style="fill:#000000;stroke-width:0.07553254"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\yeti.png"
+       inkscape:export-xdpi="35.415634"
+       inkscape:export-ydpi="35.415634" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3751"
+       d="m 114.78815,65.498245 a 1.3229166,1.1740961 0 0 0 1.32291,1.174095 1.3229166,1.1740961 0 0 0 1.32292,-1.174095 1.3229166,1.1740961 0 0 0 -1.32292,-1.174097 1.3229166,1.1740961 0 0 0 -1.32291,1.174097 z"
+       style="fill:#ffffff;stroke-width:0.07553254"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\yeti.png"
+       inkscape:export-xdpi="35.415634"
+       inkscape:export-ydpi="35.415634" />
+    <path
+       sodipodi:nodetypes="cssssc"
+       inkscape:connector-curvature="0"
+       id="path3753"
+       d="m 102.1781,82.325459 c 1.45027,-0.02801 0.28575,-5.312056 -5.110895,-5.306101 -5.44686,0.006 -6.543437,5.226045 -5.093147,5.252863 1.668139,0.03085 2.231275,-0.532385 5.093147,-0.532385 2.861872,0 3.513735,0.616468 5.110895,0.585623 z"
+       style="fill:#ffaaaa;stroke-width:0.09082066"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\yeti.png"
+       inkscape:export-xdpi="35.415634"
+       inkscape:export-ydpi="35.415634" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m 127.63443,92.372194 c 1.78902,6.388053 1.77054,6.377453 8.05307,4.617993 6.28252,-1.759473 41.66814,-41.183484 39.87912,-47.571536 -1.78902,-6.388052 -9.58913,-13.734067 -15.87166,-11.9746 -6.28253,1.759467 -33.84955,48.540086 -32.06053,54.928143 z m 25.53325,-41.13548 a 12.011628,11.813204 74.354711 0 0 14.61483,8.380796 12.011628,11.813204 74.354711 0 0 8.13622,-14.75239 12.011628,11.813204 74.354711 0 0 -14.61483,-8.380797 12.011628,11.813204 74.354711 0 0 -8.13622,14.752391 z"
+       style="fill:#b7c8c4;stroke-width:0.34379828"
+       id="path3762"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\yeti.png"
+       inkscape:export-xdpi="35.415634"
+       inkscape:export-ydpi="35.415634" />
+    <path
+       style="fill:#37abc8;stroke-width:0.26458332"
+       d="m -83.067371,72.119415 c 9.573921,35.730355 -24.793689,66.977745 -55.378249,66.977745 -30.58456,0 -64.95216,-31.24739 -55.37824,-66.977745 9.80812,-36.604413 40.13495,-63.2359694 55.37824,-63.2359714 14.49494,-1.9e-6 45.784342,27.4310244 55.378249,63.2359714 z"
+       id="path3804"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\yeti.png"
+       inkscape:export-xdpi="49.936371"
+       inkscape:export-ydpi="49.936371" />
+    <path
+       style="fill:#afdde9;stroke:#2c89a0;stroke-width:7.55905533;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -477.20508,151.02148 18.50391,25.01368 c -25.04395,-3.37248 -35.6727,-15.10647 -49.96289,-21.15821 l 43.27539,36.31055 c -15.86166,2.72788 -50.07243,-20.5834 -66.88867,-27.49609 l 14.88672,20.12304 c -33.47029,-2.60267 -52.69781,-18.86121 -63.50977,-26.89648 -33.91469,21.52487 -69.05806,60.42354 -84.4668,117.92969 -9.8169,36.63719 -1.61765,71.42986 16.75977,100.01172 -20.30426,7.96425 -31.32334,17.67322 -31.39258,27.66015 0,25.4051 69.39586,46 155,46 85.60414,0 155,-20.5949 155,-46 -0.0684,-9.5113 -10.06967,-18.78246 -28.62695,-26.53711 18.88613,-28.78998 27.42177,-64.01871 17.47656,-101.13476 -16.68997,-62.28775 -58.96439,-103.64333 -96.05469,-123.82618 z"
+       transform="scale(0.26458333)"
+       id="path4658"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccsccsccsc"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\yeti.png"
+       inkscape:export-xdpi="49.936371"
+       inkscape:export-ydpi="49.936371" />
+    <path
+       inkscape:export-ydpi="49.936371"
+       inkscape:export-xdpi="49.936371"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\yeti.png"
+       sodipodi:nodetypes="sssss"
+       inkscape:connector-curvature="0"
+       id="path4650"
+       d="m -162.51629,58.882083 c -0.75004,2.252969 -4.87036,2.91008 -9.20299,1.467699 -4.33263,-1.442381 -5.56623,-11.55052 -4.81619,-13.803489 0.75004,-2.252968 3.19969,4.202387 7.53232,5.644768 4.33263,1.442381 7.2369,4.438053 6.48686,6.691022 z"
+       style="fill:#ffeeaa;stroke-width:0.26458332" />
+    <path
+       style="fill:none;stroke:#216778;stroke-width:2.558;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -173.09458,108.61667 c 15.21708,-10.767337 52.01296,-12.162135 68.11209,0"
+       id="path4629"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\yeti.png"
+       inkscape:export-xdpi="49.936371"
+       inkscape:export-ydpi="49.936371" />
+    <circle
+       style="fill:#000000;stroke-width:2.72727275;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path4631"
+       cx="-161.925"
+       cy="87.449997"
+       r="5.2916665"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\yeti.png"
+       inkscape:export-xdpi="49.936371"
+       inkscape:export-ydpi="49.936371" />
+    <circle
+       r="1.8520832"
+       cy="86.65625"
+       cx="-159.27917"
+       id="circle4633"
+       style="fill:#ffffff;stroke-width:0.95454544;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\yeti.png"
+       inkscape:export-xdpi="49.936371"
+       inkscape:export-ydpi="49.936371" />
+    <circle
+       r="5.2916665"
+       cy="87.449997"
+       cx="-114.3"
+       id="circle4635"
+       style="fill:#000000;stroke-width:2.72727275;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\yeti.png"
+       inkscape:export-xdpi="49.936371"
+       inkscape:export-ydpi="49.936371" />
+    <circle
+       style="fill:#ffffff;stroke-width:0.95454544;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="circle4637"
+       cx="-111.91875"
+       cy="86.65625"
+       r="1.8520832"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\yeti.png"
+       inkscape:export-xdpi="49.936371"
+       inkscape:export-ydpi="49.936371" />
+    <ellipse
+       style="fill:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path4646"
+       cx="-142.93575"
+       cy="94.570061"
+       rx="1.6837981"
+       ry="2.0579753"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\yeti.png"
+       inkscape:export-xdpi="49.936371"
+       inkscape:export-ydpi="49.936371" />
+    <ellipse
+       ry="2.0579753"
+       rx="1.6837981"
+       cy="94.570061"
+       cx="-134.89093"
+       id="ellipse4648"
+       style="fill:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\yeti.png"
+       inkscape:export-xdpi="49.936371"
+       inkscape:export-ydpi="49.936371" />
+    <path
+       style="fill:#ffeeaa;stroke-width:0.26458332"
+       d="m -116.03361,58.882083 c 0.75004,2.252969 4.87036,2.91008 9.20299,1.467699 4.33263,-1.442381 5.56623,-11.55052 4.81619,-13.803489 -0.75004,-2.252968 -3.19969,4.202387 -7.53232,5.644768 -4.33263,1.442381 -7.2369,4.438053 -6.48686,6.691022 z"
+       id="path4652"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\yeti.png"
+       inkscape:export-xdpi="49.936371"
+       inkscape:export-ydpi="49.936371" />
+    <path
+       style="fill:#ffccaa;stroke:none;stroke-width:2.51222038;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m -303.71698,18.77666 c 0,13.443528 -2.60042,24.606246 -15.56706,24.60625 -12.96665,2e-6 -22.20221,-16.983551 -22.20221,-30.427083 0,-13.44353385 9.23556,-18.2562529 22.20221,-18.2562509 12.96664,4e-6 15.56706,10.6335554 15.56706,24.0770839 z"
+       id="path4669"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\tourist.png"
+       inkscape:export-xdpi="17.897835"
+       inkscape:export-ydpi="17.897835" />
+    <ellipse
+       style="fill:#ff2a2a;stroke:none;stroke-width:2.55800009;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4715"
+       cx="-360.33194"
+       cy="-49.564999"
+       rx="34.792709"
+       ry="8.2020836"
+       transform="rotate(-15.271607)"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\tourist.png"
+       inkscape:export-xdpi="17.897835"
+       inkscape:export-ydpi="17.897835" />
+    <ellipse
+       transform="rotate(27.890146)"
+       ry="8.2020836"
+       rx="34.792709"
+       cy="181.91187"
+       cx="-250.65253"
+       id="ellipse4717"
+       style="fill:#ff2a2a;stroke:none;stroke-width:2.55800009;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\tourist.png"
+       inkscape:export-xdpi="17.897835"
+       inkscape:export-ydpi="17.897835" />
+    <path
+       style="fill:#ff2a2a;stroke:none;stroke-width:1.93151629;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m -346.31517,36.367154 c 20.06815,-5.932388 26.64626,-3.623626 44.66574,-0.226476 11.09142,7.000905 -2.03006,52.877112 -3.96875,56.166223 -16.00537,1.608174 -27.27602,15.183379 -43.34282,10.644409 -5.75277,-4.770308 -15.415,-59.445204 2.64583,-66.584156 z"
+       id="rect4695"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\tourist.png"
+       inkscape:export-xdpi="17.897835"
+       inkscape:export-ydpi="17.897835" />
+    <path
+       style="fill:#501616;stroke:none;stroke-width:1.80956745;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m -14.943718,-325.35889 c -3.772712,14.49492 -4.975234,27.1198 -11.112499,27.1198 -6.137265,0 -11.112501,-12.14195 -11.112499,-27.1198 1e-6,-14.97785 4.999234,-26.57758 11.112499,-27.11979 6.365259,-0.56456 24.8285258,-25.57776 11.112499,27.11979 z"
+       id="ellipse4709"
+       transform="rotate(-103.46053)"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\tourist.png"
+       inkscape:export-xdpi="17.897835"
+       inkscape:export-ydpi="17.897835" />
+    <path
+       style="fill:#782121;stroke:none;stroke-width:1.91147554;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m -335.94696,116.05835 c -6.89914,14.83381 -13.50501,24.74649 -18.98781,21.66944 -1.76232,-0.98904 -2.10753,-9.50808 -3.73242,-33.30107 -1.2135,-17.768962 15.95783,-25.501207 25.34883,-20.938788 5.62701,2.733772 4.27055,17.736608 -2.6286,32.570418 z"
+       id="path4707"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\tourist.png"
+       inkscape:export-xdpi="17.897835"
+       inkscape:export-ydpi="17.897835" />
+    <path
+       style="fill:#782121;stroke:none;stroke-width:1.51048255;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m -304.04683,104.03817 c 6.67696,-14.427804 17.64683,-16.31637 22.86483,-8.029579 2.74362,4.357189 -1.49683,13.820869 -10.7905,22.156529 -9.29366,8.33566 -19.53059,11.93063 -22.86482,8.02958 -3.33424,-3.90105 5.49896,-10.72244 10.79049,-22.15653 z"
+       id="ellipse4711"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\tourist.png"
+       inkscape:export-xdpi="17.897835"
+       inkscape:export-ydpi="17.897835" />
+    <path
+       style="fill:#501616;stroke:none;stroke-width:1.38727033;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m -333.71673,130.78703 c 1.35598,3.35548 -5.59963,3.42884 -13.44755,6.05331 -8.80958,2.94607 -8.29126,0.89657 -8.29126,-2.75656 0,-3.65313 3.39383,-6.42372 12.82013,-7.36293 6.74634,-0.67219 7.13274,-0.28149 8.91868,4.06618 z"
+       id="path4731"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cscsc"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\tourist.png"
+       inkscape:export-xdpi="17.897835"
+       inkscape:export-ydpi="17.897835" />
+    <path
+       sodipodi:nodetypes="cscsc"
+       inkscape:connector-curvature="0"
+       id="path4734"
+       d="m -296.314,123.12143 c 0.78245,2.57576 -3.67764,1.98127 -9.95655,3.25026 -7.04831,1.42448 -6.48465,-0.0361 -6.19458,-2.71677 0.29006,-2.68067 3.18801,-5.21558 10.50126,-4.32991 3.3205,0.40213 4.08445,0.55581 5.64987,3.79642 z"
+       style="fill:#501616;stroke:none;stroke-width:1.05127203;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\tourist.png"
+       inkscape:export-xdpi="17.897835"
+       inkscape:export-ydpi="17.897835" />
+    <path
+       style="fill:#ff6600;stroke:none;stroke-width:2.41289687;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m -252.95645,135.44699 c 8.36774,13.87652 -27.19242,16.3656 -65.30172,24.78578 -38.88169,8.59082 -77.08896,33.23363 -80.38671,-3.29204 -0.72641,-8.04566 34.15344,-15.51479 72.44549,-26.07677 43.25718,-11.93149 62.92181,-12.53291 73.24294,4.58303 z"
+       id="path4713"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\tourist.png"
+       inkscape:export-xdpi="17.897835"
+       inkscape:export-ydpi="17.897835" />
+    <path
+       sodipodi:nodetypes="sssss"
+       inkscape:connector-curvature="0"
+       id="path4736"
+       d="m -302.32792,18.77666 c 0,0 -4.11527,-2.837097 -17.5588,-2.837093 -13.44353,2e-6 -17.85776,33.658787 -25.3413,-1.112853 -2.82855,-13.1425997 13.31699,-20.1271399 26.76052,-20.1271379 13.44353,4e-6 22.20138,12.0777912 16.13958,24.0770839 z"
+       style="fill:#280b0b;stroke:none;stroke-width:2.55800009;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\tourist.png"
+       inkscape:export-xdpi="17.897835"
+       inkscape:export-ydpi="17.897835" />
+    <path
+       style="fill:#ff5555;stroke:none;stroke-width:3.72974396;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m -301.38485,33.026554 c -0.26458,2.38125 -0.4772,7.999879 -13.17483,7.902841 -9.52158,-0.07277 -25.84778,-0.466845 -25.93445,-5.521591 -0.24472,-14.271897 8.71432,-8.943278 19.42235,-9.762243 12.21468,-0.934197 21.01795,-4.598148 19.68693,7.380993 z"
+       id="path4719"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\tourist.png"
+       inkscape:export-xdpi="17.897835"
+       inkscape:export-ydpi="17.897835" />
+    <path
+       style="fill:#37abc8;stroke:none;stroke-width:2.55800009;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m -302.32792,18.77666 c -0.0418,5.400342 -6.95504,2.993419 -15.06064,4.677217 -8.85207,1.838862 -14.36531,1.354512 -13.37684,-3.554685 1.4908,-7.404019 7.32925,-5.587361 16.37026,-5.61266 9.01582,-0.02523 12.1031,-0.141348 12.06722,4.490128 z"
+       id="path4738"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\tourist.png"
+       inkscape:export-xdpi="17.897835"
+       inkscape:export-ydpi="17.897835" />
+    <g
+       id="g4761"
+       transform="translate(-55.004069,-64.358502)"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\hand.png"
+       inkscape:export-xdpi="37.203049"
+       inkscape:export-ydpi="37.203049"
+       style="fill:#37abc8;fill-opacity:1">
+      <circle
+         r="14.218739"
+         cy="-143.40674"
+         cx="-26.192413"
+         id="path4747"
+         style="fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:2.55800009;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <circle
+         r="0"
+         style="fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:2.55800009;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle4749"
+         cx="-26.192413"
+         cy="-143.40674" />
+      <circle
+         r="14.218739"
+         cy="-85.595284"
+         cx="-26.192413"
+         id="circle4751"
+         style="fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:2.55800009;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <rect
+         y="-142.87782"
+         x="-40.38203"
+         height="57.56295"
+         width="28.376562"
+         id="rect4753"
+         style="fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:3.7923696;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+    <path
+       style="fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:3.67987132;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m -87.497766,-154.71927 h 69.948331 c 4.370137,0 7.8883343,3.5182 7.8883343,7.88834 v 27.615 c 0,4.37014 -10.7225073,47.067421 -13.4445843,50.48625 -8.367638,10.509448 -27.489692,12.388809 -64.392081,0 -4.142902,-1.390848 -12.304217,-13.911922 -12.004284,-18.271754 l 4.115951,-59.829496 c 0.299933,-4.35983 3.518196,-7.88834 7.888333,-7.88834 z"
+       id="rect4755"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssssssss"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\hand.png"
+       inkscape:export-xdpi="37.203049"
+       inkscape:export-ydpi="37.203049" />
+    <g
+       id="g4771"
+       transform="matrix(1,0,0,0.48769897,-26.627507,-83.991446)"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\hand.png"
+       inkscape:export-xdpi="37.203049"
+       inkscape:export-ydpi="37.203049"
+       style="fill:#37abc8;fill-opacity:1">
+      <circle
+         style="fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:2.55800009;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle4763"
+         cx="-26.192413"
+         cy="-143.40674"
+         r="14.218739" />
+      <circle
+         cy="-143.40674"
+         cx="-26.192413"
+         id="ellipse4765"
+         style="fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:2.55800009;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         r="0" />
+      <circle
+         style="fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:2.55800009;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle4767"
+         cx="-26.192413"
+         cy="-85.595284"
+         r="14.218739" />
+      <rect
+         style="fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:3.7923696;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4769"
+         width="28.376562"
+         height="57.56295"
+         x="-40.38203"
+         y="-142.87782" />
+    </g>
+    <g
+       transform="matrix(1,0,0,0.48769897,1.7490553,-83.991446)"
+       id="g4781"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\hand.png"
+       inkscape:export-xdpi="37.203049"
+       inkscape:export-ydpi="37.203049"
+       style="fill:#37abc8;fill-opacity:1">
+      <circle
+         r="0"
+         style="fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:2.55800009;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle4775"
+         cx="-26.192413"
+         cy="-143.40674" />
+      <path
+         id="rect4779"
+         style="fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:3.7923696;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         d="M -12.005468,-85.314873 H -40.38203 c 0.206278,-88.610437 28.397882,-46.249907 28.376562,0 z m 0.03179,-0.280411 c 0,7.852792 -6.365946,14.218738 -14.218738,14.218739 -7.852793,0 -14.218739,-6.365946 -14.218739,-14.218739 3.401166,-20.785366 27.905391,-17.505986 28.437477,0 z m 0.09355,-49.563726 c 1.743774,80.05389 -27.998938,9.25826 -28.531021,-8.24773 -10e-7,-7.85279 2.530628,-13.45151 10.383421,-13.45151 7.852793,0 16.931524,13.65464 18.1476,21.69924 z"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccsccccsc" />
+    </g>
+    <g
+       id="g4801"
+       transform="rotate(-37.268913,-65.564418,1.9411085)"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\hand.png"
+       inkscape:export-xdpi="37.203049"
+       inkscape:export-ydpi="37.203049"
+       style="fill:#37abc8;fill-opacity:1">
+      <circle
+         style="fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:2.55800009;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle4793"
+         cx="-26.192413"
+         cy="-143.40674"
+         r="14.218739" />
+      <circle
+         cy="-143.40674"
+         cx="-26.192413"
+         id="ellipse4795"
+         style="fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:2.55800009;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         r="0" />
+      <circle
+         style="fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:2.55800009;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle4797"
+         cx="-26.192413"
+         cy="-85.595284"
+         r="14.218739" />
+      <rect
+         style="fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:3.7923696;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4799"
+         width="28.376562"
+         height="57.56295"
+         x="-40.38203"
+         y="-142.87782" />
+    </g>
+    <path
+       style="fill:#ffe680;fill-opacity:1;stroke:none;stroke-width:2.07501411;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m -70.246802,-218.01799 c 2.473045,9.22953 -4.892181,16.29364 -10.926989,16.29364 -6.034808,0 -13.400034,-7.06411 -10.926989,-16.29364 2.57116,-9.59569 7.670304,-17.30107 10.926989,-17.30107 3.256685,0 8.431513,7.98783 10.926989,17.30107 z"
+       id="path4808"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\hand.png"
+       inkscape:export-xdpi="37.203049"
+       inkscape:export-ydpi="37.203049" />
+    <path
+       sodipodi:nodetypes="sssss"
+       inkscape:connector-curvature="0"
+       id="path4811"
+       d="m -129.05824,-140.73223 c 7.55685,5.84757 7.82504,11.4313 3.02239,15.08555 -4.80264,3.65424 -7.18445,-2.90879 -12.07992,-9.92214 -5.68608,-8.14596 -4.37209,-18.41319 -1.78034,-20.3852 2.59175,-1.97202 3.21248,9.32117 10.83787,15.22179 z"
+       style="fill:#ffe680;fill-opacity:1;stroke:none;stroke-width:2.07501411;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\hand.png"
+       inkscape:export-xdpi="37.203049"
+       inkscape:export-ydpi="37.203049" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:50.79999924px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Bold';letter-spacing:0px;word-spacing:0px;fill:#ffcc00;fill-opacity:1;stroke:#ffcc00;stroke-width:0.26458332;stroke-opacity:1;"
+       x="-320.66998"
+       y="-191.30142"
+       id="text876"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\dollar.png"
+       inkscape:export-xdpi="37.452293"
+       inkscape:export-ydpi="37.452293"><tspan
+         sodipodi:role="line"
+         id="tspan874"
+         x="-320.66998"
+         y="-191.30142"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:50.79999924px;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Bold';stroke-width:0.26458332;fill:#ffcc00;stroke:#ffcc00;stroke-opacity:1;">S</tspan></text>
+    <path
+       style="fill:#ffcc00;stroke:#ffcc00;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -304.20617,-231.3384 v 43.40457"
+       id="path878"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Micka\Documents\Phaser2\fr-gamejam-xmas-2017\assets\images\dollar.png"
+       inkscape:export-xdpi="37.452293"
+       inkscape:export-ydpi="37.452293" />
+  </g>
+</svg>
