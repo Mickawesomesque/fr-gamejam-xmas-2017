@@ -205,6 +205,8 @@ export default class extends State {
 
     this.tourist.disable()
 
+    this.dollarSpawner.stop()
+
     this.add.tween(this.gameOverMessage)
       .to({ alpha: 1 }, Timer.SECOND, Easing.Linear.None, true, Timer.SECOND)
       .onComplete.add(() => { this.canRestart = true }, this)
