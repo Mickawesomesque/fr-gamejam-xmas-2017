@@ -15,10 +15,11 @@ export default class extends State {
   }
 
   create () {
-    this.tourist = new Tourist(this.game, this.world.centerX, this.world.centerY)
+    this.dollar = this.add.sprite(this.world.width - 200, this.world.centerY, 'dollar')
+    this.physics.enable(this.dollar, Physics.ARCADE)
+    this.dollar.anchor.setTo(0.5)
 
-    this.hand = this.add.sprite(this.tourist.x, this.tourist.y, 'hand')
-    this.hand.anchor.setTo(0.4, 0.1)
+    this.tourist = new Tourist(this.game, 200, this.world.centerY)
 
     this.add
       .text(
@@ -38,7 +39,7 @@ export default class extends State {
       .text(
         this.world.centerX,
         250,
-        'To launch the snowboarder',
+        'To get fame',
         {
           align: 'center',
           fill: '#0A0A0A',
@@ -48,11 +49,10 @@ export default class extends State {
       )
       .anchor.setTo(0.5)
 
-    const action = this.game.device.desktop ? 'Click' : 'Tap'
     this.instructions = this.add.text(
       this.world.centerX,
       310,
-      `${action} & drag`,
+      'Collect dollars',
       {
         align: 'center',
         fill: '#0A0A0A',
@@ -61,20 +61,15 @@ export default class extends State {
       }
     )
     this.instructions.anchor.setTo(0.5)
-
-    this.handTween = this.add.tween(this.hand)
-      .to({ x: 200, y: 650 }, 1.3 * Timer.SECOND, Easing.Linear.None)
-      .loop(true)
-      .start(Timer.SECOND)
-
-    this.timer = null
   }
 
   update () {
-    if (this.tourist.data.isGrabbed && !this.timer) {
-      this.timer = this.time.create()
-      this.timer.add(0.5 * Timer.HALF, changeState, this, this, 'Tutorial2')
-      this.timer.start()
-    }
+    this.physics.arcade.overlap(this.tourist, this.dollar, this.onCollectDollar, null, this)
+  }
+
+  onCollectDollar () {
+    this.dollar.kill()
+
+    changeState(this.game, 'Game')
   }
 }
