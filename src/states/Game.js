@@ -207,6 +207,7 @@ export default class extends State {
 
     this.dollarSpawner.stop()
 
+    this.world.bringToTop(this.gameOverMessage)
     this.add.tween(this.gameOverMessage)
       .to({ alpha: 1 }, Timer.SECOND, Easing.Linear.None, true, Timer.SECOND)
       .onComplete.add(() => { this.canRestart = true }, this)
