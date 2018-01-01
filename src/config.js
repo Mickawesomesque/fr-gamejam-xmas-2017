@@ -6,10 +6,10 @@ import {
 import { name as pkgName } from '../package.json'
 
 export default {
-  height: '100%',
+  height: 960,
   localStorageName: pkgName,
   // parent: 'content',
   renderer: AUTO,
   scaleMode: ScaleManager.SHOW_ALL,
-  width: '100%',
+  width: 640,
 }

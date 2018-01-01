@@ -6,7 +6,7 @@ export default class extends State {
     this.scale.pageAlignHorizontally = true
     this.scale.pageAlignVertically = true
 
-    this.stage.backgroundColor = '#0A0A0A'
+    this.stage.backgroundColor = '#FFFFFF'
 
     this.fontsReady = false
     this.fontsLoaded = this.fontsLoaded.bind(this)
@@ -15,12 +15,12 @@ export default class extends State {
   preload () {
     WebFont.load({
       google: {
-        families: ['Bangers'],
+        families: ['Luckiest Guy'],
       },
       active: this.fontsLoaded,
     })
 
-    let text = this.add.text(this.world.centerX, this.world.centerY, 'loading fonts', { font: '16px Arial', fill: '#dddddd', align: 'center' })
+    const text = this.add.text(this.world.centerX, this.world.centerY, 'loading fonts', { font: '16px Arial', fill: '#dddddd', align: 'center' })
     text.anchor.setTo(0.5, 0.5)
 
     this.load.image('loaderBg', './assets/images/loader-bg.png')
