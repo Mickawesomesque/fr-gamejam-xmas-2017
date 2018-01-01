@@ -131,11 +131,19 @@ export default class extends State {
   }
 
   onYetiAwakening () {
-    const x = this.rnd.between(this.yeti.width, this.world.width - this.yeti.width)
-    const y = this.rnd.between(this.yeti.height, this.world.height - this.yeti.height)
-
-    this.yetiDestination.x = x
-    this.yetiDestination.y = y
+    if (this.rnd.between(0, 10) > 7) {
+      this.yetiDestination.x = this.tourist.x
+      this.yetiDestination.y = this.tourist.y
+    } else {
+      this.yetiDestination.x = this.rnd.between(
+        this.yeti.width,
+        this.world.width - this.yeti.width
+      )
+      this.yetiDestination.y = this.rnd.between(
+        this.yeti.height,
+        this.world.height - this.yeti.height
+      )
+    }
 
     this.yetiDestinationAlphaTween = this.add.tween(this.yetiDestination)
       .from({ alpha: 0.4 }, Timer.HALF, Easing.Linear.None)
