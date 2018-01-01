@@ -30,12 +30,7 @@ export default class extends State {
     this.tourist.inputEnabled = true
     this.tourist.input.start(0, true)
 
-    const touristBodyRadius = this.tourist.width / 3
-    this.tourist.body.setCircle(
-      touristBodyRadius,
-      -touristBodyRadius + 0.5 * (this.tourist.width / this.tourist.scale.x),
-      -touristBodyRadius + 0.5 * (this.tourist.height / this.tourist.scale.y)
-    )
+    this.tourist.body.setSize(64 / this.tourist.scale.x, 96 / this.tourist.scale.y, 24, 16)
 
     this.touristDrag = this.add.tileSprite(0, 0, 16, 16, 'tourist-drag')
     this.physics.enable(this.touristDrag, Physics.ARCADE)

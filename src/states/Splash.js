@@ -13,7 +13,7 @@ export default class extends State {
     //
     // load your assets
     //
-    this.load.image('tourist', 'assets/images/mushroom2.png')
+    this.load.image('tourist', 'assets/images/tourist.png')
     this.load.image('tourist-drag', 'assets/images/tourist-drag.png')
     this.load.image('yeti', 'assets/images/yeti.png')
     this.load.image('yeti-area', 'assets/images/yeti-area.png')
