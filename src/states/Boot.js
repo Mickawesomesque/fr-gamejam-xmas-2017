@@ -6,7 +6,7 @@ export default class extends State {
     this.scale.pageAlignHorizontally = true
     this.scale.pageAlignVertically = true
 
-    this.stage.backgroundColor = '#0A0A0A'
+    this.stage.backgroundColor = '#FFFFFF'
 
     this.fontsReady = false
     this.fontsLoaded = this.fontsLoaded.bind(this)
@@ -15,7 +15,7 @@ export default class extends State {
   preload () {
     WebFont.load({
       google: {
-        families: ['Bangers'],
+        families: ['Luckiest Guy'],
       },
       active: this.fontsLoaded,
     })

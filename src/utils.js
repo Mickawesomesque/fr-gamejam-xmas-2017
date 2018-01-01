@@ -3,3 +3,8 @@ export const centerGameObjects = (objects) => {
     object.anchor.setTo(0.5)
   })
 }
+
+export const changeState = (game, key) => {
+  game.camera.fade('#FFFFFF')
+  game.camera.onFadeComplete.add(() => game.state.start(key), game)
+}

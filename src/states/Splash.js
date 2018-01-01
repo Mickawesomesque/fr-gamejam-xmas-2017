@@ -1,5 +1,6 @@
 import { State } from 'phaser'
-import { centerGameObjects } from '../utils'
+
+import { centerGameObjects, changeState } from '../utils'
 
 export default class extends State {
   init () {}
@@ -13,6 +14,7 @@ export default class extends State {
     //
     // load your assets
     //
+    this.load.image('hand', 'assets/images/hand.png')
     this.load.image('tourist', 'assets/images/tourist.png')
     this.load.image('tourist-drag', 'assets/images/tourist-drag.png')
     this.load.image('yeti', 'assets/images/yeti.png')
@@ -20,6 +22,6 @@ export default class extends State {
   }
 
   create () {
-    this.state.start('Game')
+    changeState(this, 'Tutorial1')
   }
 }

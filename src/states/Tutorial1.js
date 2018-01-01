@@ -1,0 +1,51 @@
+import {
+  Easing,
+  Physics,
+  State,
+  Timer,
+} from 'phaser'
+
+import Tourist from '../actors/Tourist'
+
+import { changeState } from '../utils'
+
+export default class extends State {
+  init () {
+    this.physics.startSystem(Physics.ARCADE)
+  }
+
+  create () {
+    this.tourist = new Tourist(this.game, this.world.centerX, this.world.centerY)
+
+    this.hand = this.add.sprite(this.tourist.x, this.tourist.y, 'hand')
+    this.hand.anchor.setTo(0.4, 0.1)
+
+    this.instructions = this.add.text(
+      this.world.centerX,
+      200,
+      'Launch the snowboarder',
+      {
+        align: 'center',
+        fill: '#0A0A0A',
+        font: 'Luckiest Guy',
+        fontSize: 42,
+      }
+    )
+    this.instructions.anchor.setTo(0.5, 0)
+
+    this.handTween = this.add.tween(this.hand)
+      .to({ x: 200, y: 650 }, 1.3 * Timer.SECOND, Easing.Linear.None)
+      .loop(true)
+      .start(Timer.SECOND)
+
+    this.timer = null
+  }
+
+  update () {
+    if (this.tourist.data.isGrabbed && !this.timer) {
+      this.timer = this.time.create()
+      this.timer.add(0.5 * Timer.HALF, changeState, this, this, 'Game')
+      this.timer.start()
+    }
+  }
+}
