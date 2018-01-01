@@ -14,6 +14,7 @@ export default class extends State {
     //
     // load your assets
     //
+    this.load.image('dollar', 'assets/images/dollar.png')
     this.load.image('hand', 'assets/images/hand.png')
     this.load.image('tourist', 'assets/images/tourist.png')
     this.load.image('tourist-drag', 'assets/images/tourist-drag.png')

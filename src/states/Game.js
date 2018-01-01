@@ -16,6 +16,10 @@ export default class extends State {
   }
 
   create () {
+    this.dollars = this.add.group()
+    this.dollars.enableBody = true
+    this.dollars.physicsBodyType = Physics.ARCADE
+
     this.tourist = new Tourist(this.game, this.world.centerX, this.world.centerY)
 
     this.yeti = this.add.sprite(
@@ -89,6 +93,10 @@ export default class extends State {
       .start()
 
     this.canRestart = false
+
+    this.dollarSpawner = this.time.create(false)
+    this.dollarSpawner.add(2 * Timer.SECOND, this.spawnDollar, this)
+    this.dollarSpawner.start()
   }
 
   update () {
@@ -101,9 +109,14 @@ export default class extends State {
     }
 
     this.physics.arcade.collide(this.tourist, this.yetiArea, this.wakePissedOffYeti, null, this)
+    this.physics.arcade.overlap(this.tourist, this.dollars, this.onCollectDollar, null, this)
 
     this.yetiArea.x = this.yeti.x
     this.yetiArea.y = this.yeti.y
+  }
+
+  onCollectDollar (_, dollar) {
+    dollar.kill()
   }
 
   onYetiAwakening () {
@@ -152,6 +165,17 @@ export default class extends State {
       this
     )
     this.yeti.data.awakeningDelay.start()
+  }
+
+  spawnDollar () {
+    this.dollars.create(
+      this.rnd.between(50, this.world.width - 50),
+      this.rnd.between(50, this.world.height - 50),
+      'dollar'
+    )
+
+    this.dollarSpawner.add((this.rnd.frac() * 5) * Timer.SECOND, this.spawnDollar, this)
+    this.dollarSpawner.start()
   }
 
   wakePissedOffYeti () {
