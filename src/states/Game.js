@@ -53,6 +53,7 @@ export default class extends State {
     this.yeti.data.awakeningDelay.add(5 * Timer.SECOND, this.onYetiAwakening, this)
     this.yeti.data.awakeningDelay.start()
     this.yeti.data.movingDelay = this.time.create(false)
+    this.yeti.scale.setTo(0.7)
 
     const yetiBodyRadius = this.yeti.width / 2
     this.yeti.body.setCircle(
@@ -60,14 +61,13 @@ export default class extends State {
       -yetiBodyRadius + 0.5 * (this.yeti.width / this.yeti.scale.x),
       -yetiBodyRadius + 0.5 * (this.yeti.height / this.yeti.scale.y)
     )
-    this.yeti.scale.setTo(2)
 
     this.yetiArea = this.add.sprite(this.yeti.x, this.yeti.y, 'yeti-area')
     this.physics.enable(this.yetiArea, Physics.ARCADE)
     this.world.sendToBack(this.yetiArea)
     this.yetiArea.anchor.setTo(0.5)
     this.yetiArea.body.immovable = true
-    this.yetiArea.scale.setTo(1.5)
+    this.yetiArea.scale.setTo(1.7)
 
     const yetiAreaBodyRadius = this.yeti.width / 2
     this.yetiArea.body.setCircle(
@@ -86,7 +86,13 @@ export default class extends State {
     this.yetiAreaScaleTween = this.add.tween(this.yetiArea.scale)
       .to({ x: 2.5, y: 2.5 }, 2 * Timer.SECOND, Easing.Linear.None, true, 0, -1, true)
     this.yetiDestinationAlphaTween = null
-    this.yetiMovingTween = null
+    this.yetiMovementTween = null
+    this.yetiMovingTween = this.add.tween(this.yeti)
+      .to({ angle: this.yeti.angle - 30 }, Timer.SECOND)
+      .to({ angle: this.yeti.angle + 30 }, 1.5 * Timer.SECOND)
+      .loop(true)
+      .yoyo(true)
+      .start()
   }
 
   update () {
@@ -156,14 +162,14 @@ export default class extends State {
   }
 
   onYetiStartMoving () {
-    this.yetiMovingTween = this.add.tween(this.yeti)
+    this.yetiMovementTween = this.add.tween(this.yeti)
       .to(
         { x: this.yetiDestination.x, y: this.yetiDestination.y },
         Timer.SECOND,
         Easing.Linear.None,
         true
       )
-    this.yetiMovingTween.onComplete.add(() => {
+    this.yetiMovementTween.onComplete.add(() => {
       if (this.yetiDestinationAlphaTween) {
         this.yetiDestinationAlphaTween.stop()
         this.yetiDestination.alpha = 0
@@ -188,10 +194,13 @@ export default class extends State {
     this.yetiAreaAlphaTween.stop()
     this.yetiAreaScaleTween.stop()
 
-    if (this.yetiMovingTween) {
-      this.yetiMovingTween.stop(true)
-      this.yetiMovingTween = null
+    if (this.yetiMovementTween) {
+      this.yetiMovementTween.stop(true)
+      this.yetiMovementTween = null
     }
+
+    this.yetiMovingTween.stop()
+    this.yeti.angle = 0
 
     const areaSize = Math.max(this.yetiArea.width, this.yetiArea.height) / this.yetiArea.scale.x
     const scale = (Math.max(this.world.width, this.world.height) / areaSize) + 10
